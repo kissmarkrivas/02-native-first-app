@@ -1,9 +1,12 @@
-import { Text, View } from "react-native"
+import { SafeAreaView, Text, View } from "react-native"
+import { HelloWorldScreen } from './src/presentation/screens/HelloWorldScreen';
+import { CounterScreen } from "./src/presentation/screens/CounterScreen";
 
 export const App = () => {
   return (
-    <View>
-      <Text>hola mundo</Text>
-    </View>
+    <SafeAreaView style={{flex:1}}>
+      {/* <HelloWorldScreen name="Kissmark Rivas"/> */}
+      <CounterScreen/>
+    </SafeAreaView>
   )
 }
